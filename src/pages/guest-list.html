@@ -2,56 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Guest List</title>
-
-  <!-- путь к CSS -->
-  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/main.css">
 </head>
 <body>
 
-  <header class="page-header">
+  <div class="container">
+
+    <header class="page-header">
+    <a href="overview.html" class="back">← Back</a>
     <h1>Guest List</h1>
-    <p>RSVP status of wedding guests</p>
   </header>
 
-  <main class="content">
+    <!-- Summary
+    <section class="cards">
+      <div class="card">
+        <h3>24</h3>
+        <p>Total guests</p>
+      </div>
+      <div class="card">
+        <h3>18</h3>
+        <p>Confirmed</p>
+      </div>
+      <div class="card">
+        <h3>4</h3>
+        <p>Pending</p>
+      </div>
+      <div class="card">
+        <h3>2</h3>
+        <p>Declined</p>
+      </div>
+    </section> -->
 
-    <table class="guest-table">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Group</th>
-          <th>RSVP Status</th>
-          <th>+1</th>
-          <th>Notes</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Li Wei</td>
-          <td>Family</td>
-          <td class="status yes">Confirmed</td>
-          <td>Yes</td>
-          <td>Vegetarian</td>
-        </tr>
-        <tr>
-          <td>Zhang Min</td>
-          <td>Friends</td>
-          <td class="status pending">Pending</td>
-          <td>No</td>
-          <td>—</td>
-        </tr>
-        <tr>
-          <td>Anna Ivanova</td>
-          <td>Friends</td>
-          <td class="status no">Declined</td>
-          <td>No</td>
-          <td>Traveling</td>
-        </tr>
-      </tbody>
-    </table>
+    <!-- Dashboard -->
+<section class="dashboard">
+  <div class="dashboard-card">
+    <span class="value">24</span>
+    <span class="label">Total</span>
+  </div>
 
-  </main>
+  <div class="dashboard-card confirmed">
+    <span class="value">18</span>
+    <span class="label">Confirmed</span>
+  </div>
+
+  <div class="dashboard-card pending">
+    <span class="value">4</span>
+    <span class="label">Pending</span>
+  </div>
+
+  <div class="dashboard-card declined">
+    <span class="value">2</span>
+    <span class="label">Declined</span>
+  </div>
+</section>
+
+    <!-- Guest list -->
+    <section class="cards">
+
+      <div class="card">
+        <h3>Li Wei</h3>
+        <p>Confirmed · Groom’s family</p>
+      </div>
+
+      <div class="card">
+        <h3>Chen Mei</h3>
+        <p>Confirmed · Bride’s friend</p>
+      </div>
+
+      <div class="card">
+        <h3>John Smith</h3>
+        <p>Pending · Photographer assistant</p>
+      </div>
+
+      <div class="card">
+        <h3>Anna Petrova</h3>
+        <p>Declined · Bride’s colleague</p>
+      </div>
+
+    </section>
+
+  </div>
 
 </body>
 </html>

@@ -302,3 +302,32 @@ body {
   font-size: 13px;
   color: #999;
 }
+
+/* Guest List */
+.guest-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+}
+
+.guest-table th,
+.guest-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eaeaea;
+  text-align: left;
+}
+
+.status.yes {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.status.pending {
+  color: #f9a825;
+  font-weight: 600;
+}
+
+.status.no {
+  color: #c62828;
+  font-weight: 600;
+}

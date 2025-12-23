@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Your Planner</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header class="page-header">
+      <a href="overview.html" class="back">← Back</a>
+      <h1>Contact Your Planner</h1>
+    </header>
+
+    <!-- Planner Card -->
+    <section class="planner-card">
+
+      <img src="../assets/images/planner.jpg" alt="Planner" class="avatar">
+
+      <h2>Anna Li</h2>
+      <p class="role">Wedding Planner · Phuket</p>
+
+      <div class="wechat-box">
+        <p class="wechat-label">WeChat ID</p>
+        <div class="wechat-id">
+          <span id="wechatId">anna_phuket</span>
+          <button onclick="copyWeChat()">Copy</button>
+        </div>
+      </div>
+
+      <div class="qr-box">
+        <p class="qr-label">Scan QR code to chat</p>
+        <img src="../assets/images/wechat-qr.png" alt="WeChat QR" class="qr">
+      </div>
+
+      <p class="hint">
+        We use WeChat for fast and convenient communication.
+      </p>
+
+    </section>
+
+  </div>
+
+  <script>
+    function copyWeChat() {
+      const text = document.getElementById("wechatId").innerText;
+      navigator.clipboard.writeText(text);
+      alert("WeChat ID copied");
+    }
+  </script>
+
+</body>
+</html>
